@@ -5,45 +5,64 @@ class Rectangle():
     # It sets an instance variable, "width" to the passed argument, width
     # It sets an instance variable, "height" to the passed argument, height
 
-    # YOUR CODE HERE
+ 
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height 
 
 
 
-    # Create the "__str__" method
-    #
-    # It returns a string, 
-    #       "A rectangle with width ____ and height ____"
 
-    # YOUR CODE HERE
+# Create the "__str__" method
+#
+# It returns a string, 
+#       "A rectangle with width ____ and height ____"
 
-
-
-    # Create the "verify_input" method
-    #
-    # It returns a boolean
-    #       True if the width and height are positive numbers
-    #       False otherwise
-
-    # YOUR CODE HERE
+    def __str__ (self, width, height):
+        return f'Arectangle with width{self.width} and height{self.height}'
 
 
 
-    # Create the "area" method
-    #
-    # It first verifies inputs and return "Invalid input" if they are invalid.
-    # Otherwise, it returns the area of the rectangle.
+# Create the "verify_input" method
+#
+# It returns a boolean
+#       True if the width and height are positive numbers
+#       False otherwise
 
-    # YOUR CODE HERE
+    def veryify_input(self, width, height):
+        if width > 0 and height > 0:
+            return True
+        
 
 
 
-    # Create the "perimeter" method
-    #
-    # It first verifies inputs and return "Invalid input" if they are invalid.
-    # Otherwise, it returns the perimeter of the rectangle.
+# Create the "area" method
+#
+# It first verifies inputs and return "Invalid input" if they are invalid.
+# Otherwise, it returns the area of the rectangle.
 
-    # YOUR CODE HERE
-    
+    def area(self,width, height):
+        if float(width) == True and float(height) == True:
+            return width * height 
+        else:
+            return "Invalid input"
+        
+        
+        
+
+
+
+# Create the "perimeter" method
+#
+# It first verifies inputs and return "Invalid input" if they are invalid.
+# Otherwise, it returns the perimeter of the rectangle.
+
+    def perimeter(self, width, height):
+        if float(width) == True and float(height) == True:
+                return (2*width) + (2*height) 
+        else:
+            return "Invalid input"
+
 
 
 def main():
