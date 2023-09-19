@@ -18,7 +18,7 @@ class Rectangle():
 # It returns a string, 
 #       "A rectangle with width ____ and height ____"
 
-    def __str__ (self, width, height):
+    def __str__ (self):
         return f'Arectangle with width{self.width} and height{self.height}'
 
 
@@ -29,7 +29,7 @@ class Rectangle():
 #       True if the width and height are positive numbers
 #       False otherwise
 
-    def veryify_input(self, width, height):
+    def veryify_input(self):
         if width > 0 and height > 0:
             return True
         
@@ -41,9 +41,9 @@ class Rectangle():
 # It first verifies inputs and return "Invalid input" if they are invalid.
 # Otherwise, it returns the area of the rectangle.
 
-    def area(self,width, height):
-        if float(width) == True and float(height) == True:
-            return width * height 
+    def area(self):
+        if float(self.width) == True and float(self.height) == True:
+            return self.width * self.height 
         else:
             return "Invalid input"
         
@@ -57,9 +57,9 @@ class Rectangle():
 # It first verifies inputs and return "Invalid input" if they are invalid.
 # Otherwise, it returns the perimeter of the rectangle.
 
-    def perimeter(self, width, height):
-        if float(width) == True and float(height) == True:
-                return (2*width) + (2*height) 
+    def perimeter(self):
+        if float(self.width) == True and float(self.height) == True:
+                return (2* self.width) + (2*self.height) 
         else:
             return "Invalid input"
 
